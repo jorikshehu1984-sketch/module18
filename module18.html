@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 2D Transforms and Transitions</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #263b5e;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #3498db;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto;
+            border-radius: 15px;
+            font-size: 20px;
+            font-weight: bold;
+
+            /* CSS Transition */
+            transition: transform 0.5s ease,
+                        background-color 0.5s ease;
+        }
+
+        /* CSS 2D Transform on Hover */
+        .box:hover {
+            transform: rotate(15deg) scale(1.2);
+            background-color: #e74c3c;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS 2D Transforms and Transitions</h1>
+
+    <p>Move your mouse over the box to see the animation!</p>
+
+    <div class="box">
+        Hover Over Me!
+    </div>
+
+</body>
+</html>
